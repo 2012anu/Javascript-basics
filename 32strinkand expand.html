@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <script>
+        var fz = 10;
+        var opr = '+';
+        var pattern = 'Text Growing';
+        var color = 'red';
+
+        function fn() {
+            if (fz == 50) {
+                opr = '-';
+                pattern = 'Text Shrinking';
+                color = 'blue';
+            }
+            if (opr == '+')
+                fz = parseInt(fz) + 5;
+            else {
+                fz = parseInt(fz) - 5;
+                if (fz == 0) return;
+            }
+            document.getElementById("myText").style.fontSize = fz + 'px';
+            document.getElementById("myText").style.color = color;
+            document.getElementById("myText").innerHTML = pattern;
+
+            setTimeout(fn, 1000);
+        }
+    </script>
+</head>
+
+<body style='text-align: center'>
+    <br>
+    <br>
+    <div id='myText' style='font-size: 10px'>pattern</div>
+    <br>
+    <br>
+    <input type='button' value='Click' onClick="fn()" />
+</body>
+
+</html>

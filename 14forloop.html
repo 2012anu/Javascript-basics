@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>for loop</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button onclick="myFunction()"> Click me</button>
+    <script>
+        var count;
+        for (count = 0; count <= 10; count++) {
+            document.write(count);
+            document.write("</br>");
+        }
+    </script>
+    <br>
+    <!--this for loop -->
+    <script>
+        var txt = "";
+        var person = {
+            fname: "anusha",
+            lname: "MA",
+            age: 30
+        };
+        var x;
+        for (x in person) {
+            txt += person[x] + " ";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+    <br>
+
+    <!--while loop-->
+    <script>
+        var i = 10;
+        while (i < 20) {
+            document.write(i);
+            document.write("<br />");
+            i++;
+        }
+    </script>
+    <br>
+    <!--do while loop-->
+    <script>
+        function myFunction() {
+            var i = 50;
+            do {
+                document.write(i + "<br>");
+                i++;
+            }
+            while (i < 90)
+            document.getElementById("dowhile").innerHTML = text;
+        }
+    </script>
+</body>

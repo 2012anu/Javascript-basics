@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>String</title>
+</head>
+
+<body>
+    <p id="demo"> </p>
+    <p id="mul"></p>
+    <p id="quote"></p>
+    <p id="randome"> </p>
+    <p id="max"></p>
+    <p id="min"> </p>
+    <p id="random"></p>
+    <script>
+        var person = "anusha";
+        var person1 = "student";
+        document.getElementById("demo").innerHTML = person + "is a" + person1;
+    </script>
+    <!--to show multiple line-->
+    <script>
+        var line1 = "hello this is ";
+        var line2 = "this second line ";
+        var line3 = "this is third line ";
+        document.getElementById("mul").innerHTML = line1 + "<br>" + line2 + "<br>" + line3;
+    </script>
+    <!--when there is quote-->
+    <script>
+        var statement = " Hello this Anusha, \'inside the the quote\'. ";
+        document.getElementById("quote").innerHTML = statement;
+    </script>
+
+    <!--to genarate the random number-->
+    <script>
+        document.getElementById("randome").innerHTML = Math.random();
+    </script>
+    <!--to to check max min-->
+    <script>
+        document.getElementById("max").innerHTML = Math.min(233, 455, 55, -34, 556, -6, 32);
+        document.getElementById("min").innerHTML = Math.max(345, 6, 86, -343, 232, -54, 45, -21);
+    </script>
+    <!--Round function-->
+    <script>
+        document.getElementById("random").innerHTML = Math.round(13.45);
+    </script>
+
+</body>

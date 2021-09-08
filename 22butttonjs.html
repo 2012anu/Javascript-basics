@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>the buttons</title>
+</head>
+
+<body>
+    <p id="para"> This is statement before the click!</p>
+    <button id="btn"> click me to chanage!!</button>
+    <!--this will help to change the statement-->
+    <script>
+        document.getElementById("btn").onclick = function() {
+            document.getElementById("para").innerHTML = "I changed!!"
+        }
+    </script>
+    <!--this is using if statment-->
+    <p id="demo1"> 2nd statement to change!!</p>
+    <button id="button"> 2nd click</button>
+    <script>
+        var tochange = true;
+        document.getElementById("button").onclick = function() {
+            alert("this alert which comes after every 2nd click and then it will change the statemnt!!");
+            if (tochange == false) {
+                document.getElementById("demo1").innerHTML = "this another way i changed the statement";
+            } else {
+                document.getElementById("demo1").innerHTML = "not going to change";
+            }
+        }
+    </script>
+    <p id="para1"> this stament need to get change 2</p>
+    <button id="but">click 3</button>
+    <script>
+        document.getElementById("but").onclick = function() {
+            var sec = false;
+            if (sec == false) {
+                alert("this alret to tell if i equal to false");
+
+            } else {
+                sec = true;
+                document.getElementById("para1").innerHTML = "hey you changed";
+            }
+        }
+    </script>
+</body>
+
+</html>

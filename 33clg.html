@@ -1,0 +1,65 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+    <script type="text/javascript">
+        function doAdd() {
+            var opr1, opr2, result;
+            opr1 = document.calForm.operand1.value;
+            opr2 = document.calForm.operand2.value;
+            result = parseInt(opr1) + parseInt(opr2);
+            document.getElementById("result").innerHTML = 'Result=' + result;
+        }
+
+        function doSub() {
+            var opr1, opr2, result;
+            opr1 = document.calForm.operand1.value;
+            opr2 = document.calForm.operand2.value;
+            result = parseInt(opr1) - parseInt(opr2);
+            document.getElementById("result").innerHTML = 'Result=' + result;
+        }
+
+        function doMul() {
+            var opr1, opr2, result;
+            opr1 = document.calForm.operand1.value;
+            opr2 = document.calForm.operand2.value;
+            result = parseInt(opr1) * parseInt(opr2);
+            document.getElementById("result").innerHTML = 'Result=' + result;
+        }
+
+        function doDiv() {
+            var opr1, opr2, result;
+            opr1 = document.calForm.operand1.value;
+            opr2 = document.calForm.operand2.value;
+            result = parseInt(opr1) / parseInt(opr2);
+            document.getElementById("result").innerHTML = 'Result=' + result;
+        }
+    </script>
+
+</head>
+
+<body style="text-align: center;">
+    <br>
+    <br>
+    <form name="calForm">
+        <br>
+        <br> Operand1:
+        <input type="number" name="operand1" />
+        <br>
+        <br> Operand2:
+        <input type="number" name="operand2" />
+        <br>
+        <br> Operation:
+        <input type="button" name="add" value="+" onclick="doAdd()" />
+        <input type="button" name="sub" value="-" onclick="doSub()" />
+        <input type="button" name="mul" value="*" onclick="doMul()" />
+        <input type="button" name="div" value="/" onclick="doDiv()" />
+        <br>
+        <br>
+        <span id="result"></span>
+    </form>
+
+</body>
+
+</html>

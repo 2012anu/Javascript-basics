@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <title>objects</title>
+</head>
+<html>
+<!--single object-->
+<p id="demo"></p>
+<!--this multiple object-->
+<p id="multiple"></p>
+
+<body>
+    <script>
+        var car = {
+            type: "danzo",
+            colour: "yellow",
+            feature: "riding"
+        };
+        document.getElementById("demo").innerHTML = car.type;
+    </script>
+    <!--this is a example for multiple obeject-->
+    <script>
+        var person = {
+            name: "anusha",
+            last: "Arunkumar",
+            colour: " black eyes"
+
+        };
+        document.getElementById("multiple").innerHTML = person.name + "has a eyes colour" + person.colour;
+    </script>
+
+</body>
+
+</html>

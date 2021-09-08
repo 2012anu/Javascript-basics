@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js form</title>
+
+    <script>
+        function thidisunctionname() {
+            var x = document.forms["formname"]["first"].value;
+            if (x == "") {
+                alert("fillout the form");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <form name="formname" onsubmit=" return thisisunctionname()">
+        <label> first:</label>
+        <input type="text" name="first">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+
+</body>
+
+</html>

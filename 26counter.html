@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>counter</title>
+    <style>
+        #btn {
+            border-radius: 15%;
+            background-color: cornflowerblue;
+            box-sizing: border-box;
+            border-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>click the button it will increment</h3>
+    <button id="btn" onclick="increment()"> click me: 0</button>
+    <button id="btn" onclick="res()"> reset</button>
+
+    <script>
+        var count = 0;
+
+        function increment() {
+            count++;
+
+            document.getElementById("btn").innerHTML = "click me: " + count;
+
+        }
+
+        function res() {
+            count = 0;
+            document.getElementById("btn").innerHTML = "click me:" + count;
+        }
+    </script>
+</body>
+
+</html>

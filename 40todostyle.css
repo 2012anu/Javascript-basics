@@ -1,0 +1,25 @@
+* {
+    background-color: grey;
+    background-repeat: inherit;
+}
+
+body {
+    text-align: center;
+}
+
+.container-todo {
+    text-align: center;
+    padding: 4px;
+    width: 400px;
+}
+
+input {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+}
+
+#button {
+    background-color: royalblue;
+    color: white;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>change of button</title>
+</head>
+<style>
+    button {
+        background-color: brown;
+        color: black;
+        width: 60px;
+        height: 90px;
+    }
+    
+    #yo {
+        background-color: aqua;
+        color: darkgreen;
+        font-size: larger;
+        width: 80px;
+        height: 120px;
+    }
+    
+    body {
+        text-align: center;
+    }
+    
+    #mouse {
+        background-color: rgb(255, 0, 76);
+        color: yellow;
+        font-size: larger;
+        width: 60px;
+        height: 90px;
+    }
+</style>
+
+<body>
+
+    <h2> HTML Events with out JS</h2>
+    <button onclick="this.innerHTML='Ooops i changed!'">Click on this button!</button>
+
+    <h2> HTML Events with JS</h2>
+    <button onclick="changeText(this)" id="yo">Click on this text!</button>
+
+    <script>
+        function changeText(id) {
+            id.innerHTML = "Ooops! this changed with js";
+        }
+    </script>
+
+    <br>
+    <br>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" id="mouse">
+        Mouse Over Me</div>
+    <h3>mouse over </h3>
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "Thank You"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "Mouse Over Me"
+        }
+    </script>
+
+
+</body>
+
+</html>

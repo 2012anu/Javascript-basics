@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>change style js</title>
+    <style>
+        .btn {
+            border-radius: 15%;
+            border-color: 2px solid blue;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text"> This text will get change colour once we press the button</p>
+    <button onclick="change()"> change</button>
+
+    <p id="anothertext"> this will change size</p>
+    <button class="btn" onclick="fontsize()"> Fontsize change</button>
+
+    <script>
+        function change() {
+            //this actually colour changing function
+            document.getElementById("text").style.backgroundColor = "green";
+            document.getElementById("text").style.fontSize = "200%";
+            document.getElementById("text").style.color = "red";
+        }
+
+        function fontsize() {
+            //fuction start after .style next after. we get many function
+            document.getElementById("anothertext").style.fontSize = "200%";
+            document.getElementById("anothertext").style.color = "blue";
+        }
+    </script>
+
+</body>
+
+</html>

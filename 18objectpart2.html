@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>objects and there types</title>
+
+<body>
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo4"></p>
+    <script>
+        // Create an object:
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+
+        // Display some data from the object:
+        document.getElementById("demo").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+    </script>
+
+    <!--this accesing the object properties method one-->
+    <script>
+        // Create an object:
+        var person = {
+            firstName: "Anusha",
+            lastName: "Arunkumar",
+            id: 5566
+        };
+        // Display some data from the object:
+        document.getElementById("demo1").innerHTML =
+            person.firstName + " " + person.lastName;
+    </script>
+
+    <!--method two-->
+    <script>
+        // Create an object:
+        var person = {
+            firstName: "vruksha",
+            lastName: "hedge ",
+            id: 5566
+        };
+        // Display some data from the object:
+        document.getElementById("demo2").innerHTML =
+            person["firstName"] + " " + person["lastName"];
+    </script>
+</body>
+<!--using this key word-->
+<!--scesing object -->
+<script>
+    // Create an object:
+    var person = {
+        firstName: "Aaadi",
+        lastName: "patil",
+        id: 5566,
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+    // Display data from the object:
+    document.getElementById("demo4").innerHTML = person.fullName();
+</script>
+
+<!--method two-->
+<script>
+    // Create an object:
+    var person = {
+        firstName: "object",
+        lastName: "method 2",
+        id: 5566,
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+    // Display data from the object:
+    document.getElementById("demo").innerHTML = person.fullName;
+</script>
+
+</html>

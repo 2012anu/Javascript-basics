@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(200, 153, 245);
+}
+
+.first-box {
+    background-color: rgb(107, 15, 119);
+    max-width: 1500px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+h1 {
+    color: white;
+    font-family: "Trirong", serif;
+    text-align: center;
+    font-style: italic;
+}
+
+.image {
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.logout {
+    padding-left: 90%;
+}
+
+.container {
+    background-color: white;
+    border-top: 3px solid rgb(107, 15, 119);
+    border: 1px solid lightseagreen;
+    width: 700px;
+    padding-bottom: 20px;
+    margin-left: 25%;
+    margin-top: 7%;
+}
+
+a:hover {
+    color: blue;
+}
+
+div.container div.con {
+    padding: 10px;
+    background-color: rgb(107, 15, 119);
+    color: rgb(107, 15, 119);
+    height: 5px;
+}
+
+footer {
+    background-color: rgb(107, 15, 119);
+    height: 55px;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+footer p {
+    color: orangered;
+    text-align: center;
+}

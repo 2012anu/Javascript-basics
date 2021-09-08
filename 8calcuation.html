@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <title>calculation using js function</title>
+    <script type="text/javascript">
+        function cyear(form) {
+            form.dogage.value = form.myage.value * 7
+                //this is function which get call
+
+        }
+    </script>
+</head>
+
+<body>
+    <b>To Find Human age in terms of Dog age</b>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Enter your age</td>
+                <td><input type="text" name="myage"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="calculate" onclick="cyear(this.form)">
+                    <!--this onclick have a fuction cyear 
+                        which will call in script-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Your age in dog year term
+                </td>
+                <td><input type="text" name="dogage"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>

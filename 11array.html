@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <title>things change</title>
+</head>
+
+<body>
+    <p id="array"></p>
+    <p id="array1"></p>
+    <p id="array2"></p>
+    <p id="array3"></p>
+    <p id="array4"></p>
+    <p id="array5"></p>
+    <p id="array6"></p>
+    <p id="array7"></p>
+    <p id="array8"></p>
+    <p id="array9"></p>
+    <p id="array10"></p>
+    <p id="array11"></p>
+
+    <script>
+        var fruit = ["mango", "orange", "watermellon"];
+        document.getElementById("array").innerHTML = fruit[0];
+        document.getElementById("array1").innerHTML = fruit[1];
+    </script>
+
+    <!--to string attribute which will display all the array-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        document.getElementById("array2").innerHTML = fruit.toString();
+    </script>
+
+    <!--to separate things-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        document.getElementById("array3").innerHTML = fruit.join("+");
+    </script>
+
+    <!--pop method to remove last element-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        fruit.pop();
+        document.getElementById("array4").innerHTML = fruit.toString();
+    </script>
+
+    <!--shift() will be used to remove first word-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        fruit.shift();
+        document.getElementById("array5").innerHTML = fruit.toString();
+    </script>
+
+    <!--to add any elemrnt use push()-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        fruit.push("cheery ");
+        document.getElementById("array6").innerHTML = fruit.toString();
+    </script>
+
+    <!--to add element in the beginning use shift()-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        fruit.unshift("pineapple");
+        document.getElementById("array7").innerHTML = fruit.toString();
+    </script>
+
+    <!--to change the element wrt index number-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        fruit[2] = "apple";
+        document.getElementById("array8").innerHTML = fruit.toString();
+    </script>
+
+    <!--to delete wrt index number-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        delete fruit[1];
+        document.getElementById("array9").innerHTML = fruit.toString();
+    </script>
+
+    <!--when we want ot add more number array element with index-->
+
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        fruit.slice(2, 3, "berry", "lemon");
+        document.getElementById("array10").innerHTML = fruit.toString();
+    </script>
+
+    <!--sort the element alphabetilcally-->
+    <script>
+        var fruit = ["mango", "orange", "watermellon", "banana"];
+        fruit.sort();
+        document.getElementById("array11").innerHTML = fruit.toString();
+    </script>
+</body>

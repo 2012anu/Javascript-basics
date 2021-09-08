@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple exam sheet</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <!--css connection-->
+    <link rel="stylesheet" href="27student.css">
+    <!--js connection-->
+    <script src="27student.js"></script>
+</head>
+
+<body>
+
+
+    <div class="box">
+        <h1> Student grade calculator</h1>
+        <!--this making header box-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 red">
+                    <!--percenatge giving h3-->
+                    <h2>Your marks are:</h2>
+                    <p id="para"></p>
+                    <h3> Your grade is:</h3>
+                    <p id="grade"></p>
+                </div>
+                <div class="col-sm-8 blue">
+                    <!--bootstrap from google-->
+
+                    <div class="form-group">
+                        <h1>Enter your Marks:</h1>
+                        <input type="text" class="form-control" placeholder="maths" id="maths">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="physics" placeholder="physics">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="biology" placeholder="biology">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="chemistry" placeholder="chemistry">
+                    </div>
+                    <!--button-->
+                    <button type="submit" onclick="getmarks()" class="btn btn-primary"> Submit</button>
+                </div>
+
+            </div>
+            <!--this another conatianer-->
+            <div class="row">
+                <div class="col-sm-12 white">
+                    <!--passed or failed conatiner-->
+                    <h3 id="pass"> </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer from bootstrap-->
+    <div class="container-fluid bg-dark">
+
+    </div>
+    <br>
+    <!--footer-->
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo" id="footer">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Exams</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">FIRST SEM</a>
+                        </li>
+                        <li>
+                            <a href="#!"> SECOND SEM</a>
+                        </li>
+                        <li>
+                            <a href="#!">THRID SEM</a>
+                        </li>
+                        <li>
+                            <a href="#!">FOURTH SEM</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">RESOURSE</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">google.com</a>
+                        </li>
+                        <li>
+                            <a href="#!">yahoo.com</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">contact us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Anusha.mysuru2012@gmail.com</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">About us</a>
+                        </li>
+                        <li>
+                            <a href="#!">privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Terms use</a>
+                        </li>
+                        <li>
+                            <a href="#!">FAQs</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+
+
+</body>
+
+</html>
